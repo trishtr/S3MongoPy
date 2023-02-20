@@ -14,18 +14,17 @@ class Test_JsonFile:
 
     prefix = 'Test/2022/11/1/'
 
-    objKeyLst = getObjKeyList().getObjKeyLstFromSpecificFolder(qa_rawbucket_name, prefix)
-
-    # print(len(objKeyLst))
 
     def test_readJsonFile(self):
+        objKeyLst = getObjKeyList().getObjKeyLstFromSpecificFolder(self.qa_rawbucket_name, self.prefix)
+
         self.connector = s3Connect(self.qa_access_key, self.qa_secret_key, self.qa_session_token, self.qa_region_name)
 
         self.s3_session = self.connector.create_s3_session()
 
         s3_client = self.s3_session.client('s3')
 
-        for key in self.objKeyLst:
+        for key in objKeyLst:
             obj = s3_client.get_object(Bucket=self.qa_rawbucket_name, Key=key)
             # ResponseMetadata is dict
 
