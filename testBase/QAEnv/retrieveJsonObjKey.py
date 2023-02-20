@@ -9,9 +9,9 @@ class getObjKeyList:
     qa_region_name = get_qa_regionName()
 
     # prefix = 'TestClient/2022/'
-    objectKeyLst = []
 
     def getObjKeyLstFromSpecificFolder(self, bucketName, prefix):
+        objectKeyLst = []
         self.connector = s3Connect(self.qa_access_key, self.qa_secret_key, self.qa_session_token, self.qa_region_name)
 
         self.s3_session = self.connector.create_s3_session()
@@ -21,6 +21,6 @@ class getObjKeyList:
 
         for object_summary in my_bucket.objects.filter(Prefix=prefix):
             # print(object_summary.key)
-            self.objectKeyLst.append(object_summary.key)
+            objectKeyLst.append(object_summary.key)
 
-        return self.objectKeyLst
+        return objectKeyLst

@@ -3,6 +3,7 @@ from testBase.QAEnv.s3Connection import s3Connect
 from utilities.readConfig import get_qa_accessKey, get_qa_secretKey, get_qa_regionName, get_qa_sessionToken
 from utilities.readConfig import get_qa_outputPublisherBucket
 from testBase.QAEnv.retrieveJsonObjKey import getObjKeyList
+from urllib.parse import unquote
 
 
 class Test_JsonFile_002:
@@ -24,7 +25,7 @@ class Test_JsonFile_002:
         s3_client = self.s3_session.client('s3')
 
         for key in objKeyLst:
-            obj = s3_client.get_object(Bucket=self.qa_rawbucket_name, Key=key)
+            obj = s3_client.get_object(Bucket=self.qa_rawbucket_name, Key=unquote(key))
             jsonBody = json.loads(obj['Body'].read())
             print(key, '\n')
             print(jsonBody, '\n')
