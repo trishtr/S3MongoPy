@@ -1,7 +1,5 @@
 import pymongo
-
-from utilities.readConfig import get_qa_mongo_database, get_qa_mongo_parsedhl7_collection, \
-    get_qa_mongo_connectionString, get_qa_mongo_unitTaxonomy_collection
+from utilities.readConfig import *
 import certifi
 
 
@@ -11,6 +9,8 @@ class MGFilter:
     databaseName = get_qa_mongo_database()
     parsedhl7Collection = get_qa_mongo_parsedhl7_collection()
     unitTaxonomy = get_qa_mongo_unitTaxonomy_collection()
+    screensQuality = get_qa_mongo_qualityScreens_collection()
+    extractedAdt = get_qa_mongo_extractedADT_collection()
 
     def parsedHL7_positiveData(self):
         dbname = self.client.get_database(self.databaseName)
@@ -20,11 +20,12 @@ class MGFilter:
         docs = parsedhl7.find(query)
         return docs
 
-    def parsedHL7_latest(self):
+    def parsedHL7_testClient(self):
         dbname = self.client.get_database(self.databaseName)
         parsedhl7 = dbname.get_collection(self.parsedhl7Collection)
+        query = {"clientId": {"$eq": "TestClient"}}
 
-        docs = parsedhl7.find().sort([('timestamp', -1)]).limit(100)
+        docs = parsedhl7.find(query).sort([('timestamp', -1)])
         return docs
 
     def unitTaxonomyFilterTestClient(self):
@@ -35,8 +36,42 @@ class MGFilter:
         docs = unitTax.find(query)
         return docs
 
+    def qualityScreensFilter(self):
+        dbname = self.client.get_database(self.databaseName)
+        unitTax = dbname.get_collection(self.screensQuality)
 
+        docs = unitTax.find()
+        return docs
 
+    def extractedAdtEventsFilter_TestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "TestClient"}}
+        docs = extractedAdt.find(query).sort([('timestamp', -1)])
+        return docs
+
+    def parsedHL7_ESTAGGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        parsedhl7 = dbname.get_collection(self.parsedhl7Collection)
+
+        query = {"clientId": {"$eq": "ESTAGRTestClient"}}
+        docs = parsedhl7.find(query).sort([('timestamp', -1)])
+        return docs
+
+    def extractedAdt_ESTAGGR_false_WIP(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "ESTAGRTestClient"}, "isDocWIP": {"$eq": False}}
+        docs = extractedAdt.find(query).sort([('timestamp', -1)])
+        return docs
+
+    def extractedAdt_ESTAGGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        parsedhl7 = dbname.get_collection(self.extractedAdt)
+
+        query = {"clientId": {"$eq": "ESTAGRTestClient"}}
+        docs = parsedhl7.find(query).sort([('timestamp', -1)])
+        return docs
 
 
 

@@ -48,3 +48,11 @@ def get_qa_mongo_unitTaxonomy_collection():
     qa_mg_unitTaxonomy_collection = config.get('qa_environment', 'unit_taxonomy')
     return qa_mg_unitTaxonomy_collection
 
+
+def get_qa_mongo_qualityScreens_collection():
+    qa_mg_qualityScreens_collection = config.get('qa_environment', 'quality_screens')
+    return qa_mg_qualityScreens_collection
+
+def get_qa_mongo_extractedADT_collection():
+    qa_mg_extractedADT_collection = config.get('qa_environment', 'extracted_adt_events')
+    return qa_mg_extractedADT_collection

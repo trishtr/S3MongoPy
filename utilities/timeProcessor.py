@@ -1,6 +1,10 @@
 from dateutil.tz import UTC
 from dateutil.parser import isoparse
+from dateutil import parser
 import pytz
+import datetime
+from zoneinfo import ZoneInfo
+
 
 
 def convert_utc_to_est(isoStr):
@@ -23,6 +27,20 @@ def convert_utc_to_est(isoStr):
 
     return time_est
 
+
+def convert_est_utc(timestampStr):
+    fmt = '%Y%m%d%H%M%S'
+    datetime_str = datetime.datetime.strptime(timestampStr, fmt)
+
+    utcTimestamp = (
+        datetime_str.replace(tzinfo=ZoneInfo("America/New_York"))
+        .astimezone(ZoneInfo('UTC'))
+    )
+    fmt2 = '%Y-%m-%d %H:%M:%S'
+    utcTimestamp_str = datetime.datetime.strftime(utcTimestamp, fmt2)
+    # print(utcTimestamp_str)
+
+    return utcTimestamp_str
 
 
 
