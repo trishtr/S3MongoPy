@@ -62,17 +62,53 @@ class MGFilter:
         dbname = self.client.get_database(self.databaseName)
         extractedAdt = dbname.get_collection(self.extractedAdt)
         query = {"clientId": {"$eq": "ESTAGRTestClient"}, "isDocWIP": {"$eq": False}}
-        docs = extractedAdt.find(query).sort([('timestamp', -1)])
+        docs = extractedAdt.find(query)
         return docs
 
     def extractedAdt_ESTAGGR(self):
         dbname = self.client.get_database(self.databaseName)
-        parsedhl7 = dbname.get_collection(self.extractedAdt)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
 
         query = {"clientId": {"$eq": "ESTAGRTestClient"}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def parsedHL7_ESTNEGAGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        parsedhl7 = dbname.get_collection(self.parsedhl7Collection)
+        query = {"$or": [{"clientId": {"$regex": "^ESTNEGAGRTestClient"}}
+            , {"eventId": {"$regex": "^EST-testqa-arg-neg"}}]}
+
         docs = parsedhl7.find(query).sort([('timestamp', -1)])
         return docs
 
+    def extractedAdt_ESTNEGAGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
 
+        query = {"$or": [{"clientId": {"$regex": "^ESTNEGAGRTestClient"}}
+            , {"eventId": {"$regex": "^EST-testqa-arg-neg"}}]}
+        docs = extractedAdt.find(query)
+        return docs
 
+    def parsedHL7_NZTAGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        parsedhl7 = dbname.get_collection(self.parsedhl7Collection)
+        query = {"clientId": "NZTAGRTestClient"}
+        docs = parsedhl7.find(query)
+        return docs
 
+    def extractedAdt_NZTAGR(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+
+        query = {"clientId": {"$eq": "NZTAGRTestClient"}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_NZTAGR_false_WIP(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "NZTAGRTestClient"}, "isDocWIP": {"$eq": False}}
+        docs = extractedAdt.find(query)
+        return docs

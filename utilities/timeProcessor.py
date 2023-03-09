@@ -6,7 +6,6 @@ import datetime
 from zoneinfo import ZoneInfo
 
 
-
 def convert_utc_to_est(isoStr):
     fmt = '%Y-%m-%d %H:%M:%S'
     # parser.isoparse convert time String into datetime.datetime
@@ -18,7 +17,7 @@ def convert_utc_to_est(isoStr):
 
     # convert to String
     time_utc_str = time_utc.strftime(fmt)
-    print('\n')
+
     print('time in UTC ', time_utc_str)
 
     # strftime(timeformat) return the timeString
@@ -41,6 +40,22 @@ def convert_est_utc(timestampStr):
     # print(utcTimestamp_str)
 
     return utcTimestamp_str
+
+
+def convert_nzt_utc(timestampStr):
+    fmt = '%Y%m%d%H%M%S'
+    datetime_str = datetime.datetime.strptime(timestampStr, fmt)
+
+    utcTimestamp = (
+        datetime_str.replace(tzinfo=ZoneInfo("Pacific/Auckland"))
+        .astimezone(ZoneInfo('UTC'))
+    )
+    fmt2 = '%Y-%m-%d %H:%M:%S'
+    utcTimestamp_str = datetime.datetime.strftime(utcTimestamp, fmt2)
+    # print(utcTimestamp_str)
+
+    return utcTimestamp_str
+
 
 
 
