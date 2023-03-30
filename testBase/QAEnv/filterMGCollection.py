@@ -11,6 +11,8 @@ class MGFilter:
     unitTaxonomy = get_qa_mongo_unitTaxonomy_collection()
     screensQuality = get_qa_mongo_qualityScreens_collection()
     extractedAdt = get_qa_mongo_extractedADT_collection()
+    patientEncounters = 'patientEncounters'
+    encounterTrackings = 'encounterTracking'
 
     def parsedHL7_positiveData(self):
         dbname = self.client.get_database(self.databaseName)
@@ -112,3 +114,120 @@ class MGFilter:
         query = {"clientId": {"$eq": "NZTAGRTestClient"}, "isDocWIP": {"$eq": False}}
         docs = extractedAdt.find(query)
         return docs
+
+    def extractedAdt_qualityScreens_fail_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"}, "qualityScreens.summary": {"$eq": "fail"}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_qualityScreens_pass_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"}, "qualityScreens.summary": {"$eq": "pass"}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def patientEncounters_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        patientEn = dbname.get_collection(self.patientEncounters)
+        query = {"clientId": {"$eq": "PETestClient"}}
+        docs = patientEn.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_unitId_exists_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"}, "qualityScreens.summary": {"$eq": "pass"},
+                 "unitId": {"$exists": True}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_unitType_exists_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"}, "qualityScreens.summary": {"$eq": "pass"},
+                 "unitType": {"$exists": True}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_dischargeDateTime_exists_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"}, "qualityScreens.summary": {"$eq": "pass"},
+                 "dischargeDateTime": {"$exists": True}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_excludeCensus_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"},
+                 "qualityScreens.summary": {"$eq": "pass"},
+                 "patientClass": {"$eq": "O"},
+                 "patientType": {"$in": ["OPD", "SERIES", "SDS", "PAT"]}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_includeCensus_patientClass_O_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"},
+                 "qualityScreens.summary": {"$eq": "pass"},
+                 "patientClass": {"$eq": "O"},
+                 "patientType": {"$nin": ["OPD", "SERIES", "SDS", "PAT"]}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_includeCensus_patientClass_I_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "PETestClient"},
+                 "qualityScreens.summary": {"$eq": "pass"},
+                 "patientClass": {"$eq": "I"},
+                 "patientType": {"$in": ["OPD", "SERIES", "SDS", "PAT"]}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def unitTaxonomy_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        unitTax = dbname.get_collection(self.unitTaxonomy)
+        query = {"client.clientId": {"$eq": "PETestClient"}}
+
+        docs = unitTax.find(query)
+        return docs
+
+    def extractedAdt_screenquality_pass_TestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        extractedAdt = dbname.get_collection(self.extractedAdt)
+        query = {"clientId": {"$eq": "TestClient"}, "qualityScreens.summary": {"$eq": "pass"}}
+        docs = extractedAdt.find(query)
+        return docs
+
+    def patientEncounters_TestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        patientEn = dbname.get_collection(self.patientEncounters)
+        query = {"clientId": {"$eq": "TestClient"}}
+        docs = patientEn.find(query)
+        return docs
+
+    def patientEncounters_hasCensusEffect_true_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        patientEn = dbname.get_collection(self.patientEncounters)
+        query = {"clientId": {"$eq": "PETestClient"}, "hasCensusEffect": True, "visitNumber": "PEFARGVN011"}
+        docs = patientEn.find(query)
+        return docs
+
+    def encounterTracking_PETestClient(self):
+        dbname = self.client.get_database(self.databaseName)
+        encounterTrackings = dbname.get_collection(self.encounterTrackings)
+        query = {"clientId": {"$eq": "PETestClient"}, "visitNumber": "PEFARGVN011"}
+        docs = encounterTrackings.find(query).sort([('dateUTC', 1)])
+        return docs
+
+
+
+
+
+
