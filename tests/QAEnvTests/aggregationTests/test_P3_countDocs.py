@@ -29,6 +29,14 @@ def test_sample():
         print(events)
         print(len(events))
 
+        if len(events) == 1:
+            if dischargeDateTime != None:
+                tmp_date = dischargeDateTime - last_event.get('messageDateTime')
+            else:
+                tmp_date = datetime.datetime.now() - last_event.get('messageDateTime')
+
+            return
+
         for i in range((len(events)) - 1):
             if i == len(events) - 1:
                 break
@@ -37,6 +45,7 @@ def test_sample():
             resultByPatient[event.get('pointOfCare')] = events[i + 1].get('messageDateTime') - events[i].get(
                 'messageDateTime')
             result[visitNumber] = resultByPatient
+
         last_event = events[len(events) - 1]
 
         if dischargeDateTime != None:
