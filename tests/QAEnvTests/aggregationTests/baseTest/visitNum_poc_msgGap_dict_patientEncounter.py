@@ -51,7 +51,7 @@ def patientEncounter_dict_creator():
                     visitByPatient[visitNumber][events[0].get('pointOfCare')] = duration
 
                 print(visitByPatient)
-
+                return visitByPatient
 
             if i == len(events) - 1:
                 if dischargeDateTime == None:
@@ -77,9 +77,9 @@ def patientEncounter_dict_creator():
 
             # print(f"{events[i]['pointOfCare']} : {duration}")
 
-    print("Final Result: ")
+    print("Patient Encounter : ")
 
     print(visitByPatient)
-
+    return visitByPatient
 
 
