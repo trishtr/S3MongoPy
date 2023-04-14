@@ -50,12 +50,9 @@ def patientEncounter_dict_creator():
                 else:
                     visitByPatient[visitNumber][events[0].get('pointOfCare')] = duration
 
-                print(visitByPatient)
-                return visitByPatient
-
             if i == len(events) - 1:
-                if dischargeDateTime == None:
 
+                if dischargeDateTime == None:
                     end_date = now_utc_epoch()
                 else:
                     end_date = dischargeDateTime.timestamp()
