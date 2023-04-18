@@ -1,5 +1,6 @@
 import boto3
 from boto3.session import Session
+import os
 
 
 class s3Connect:
@@ -11,10 +12,16 @@ class s3Connect:
         self.region_name = region_name
 
     def create_s3_session(self):
-        session = boto3.Session(aws_access_key_id=self.access_key,
-                                aws_secret_access_key=self.secret_key,
-                                aws_session_token=self.session_token,
-                                region_name=self.region_name)
+        stage = os.environ.get('STAGE', None)
+        if stage == 'qa':
+            session = boto3.Session()
+
+
+        else:
+
+            session = boto3.Session(aws_access_key_id=self.access_key,
+                                    aws_secret_access_key=self.secret_key,
+                                    aws_session_token=self.session_token,
+                                    region_name=self.region_name)
 
         return session
-
