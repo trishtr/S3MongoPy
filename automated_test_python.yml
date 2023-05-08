@@ -26,6 +26,7 @@ jobs:
         source venv/bin/activate
         pip install -r requirements.txt
         python3.9 -m pytest tests/QAEnvTests/aggregationTests 
+        python3.9 -m pytest --junitxml=test-results.xml
     displayName: Run pytest
 
 ...
