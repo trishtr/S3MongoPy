@@ -1,32 +1,36 @@
 # Variable 'MONGOCONNECTIONSTRING' was defined in the Variables tab
 # Variable 'STAGE' was defined in the Variables tab
 # Cron Schedules have been converted using UTC Time Zone and may need to be updated for your location
+
 trigger:
   branches:
     include:
-    - refs/heads/main
+      - refs/heads/main
 schedules:
-- cron: 0 1 * * *
-  branches:
-    include:
-    - refs/heads/main
+  - cron: 0 1 * * *
+    branches:
+      include:
+        - refs/heads/main
 name: $(date:yyyyMMdd)$(rev:.r)
 jobs:
-- job: Job_1
-  displayName: Build
-  pool:
-    name: Eridania
-    demands:
-    - environment -equals qa
-  steps:
-  - checkout: self
-  - bash: |
-        cd scm-qa-automation-py
-        python3.9 -m venv venv
-        source venv/bin/activate
-        pip install -r requirements.txt
-        python3.9 -m pytest tests/QAEnvTests/aggregationTests 
-        python3.9 -m pytest --junitxml=test-results.xml
-    displayName: Run pytest
+  - job: Job_1
+    displayName: Build
+    pool:
+      name: Data Platform (QA)
 
-...
+    steps:
+      - checkout: self
+      - bash: |
+          cd scm-qa-automation-py
+          python3.9 -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+          python3.9 -m pytest -rx tests/aggregationMongoDB/test/test_P1*  --junitxml=pytest-results.xml
+        displayName: Run Pytest test
+
+      - task: PublishTestResults@2
+        displayName: 'Publish Pytest test results'
+        inputs:
+          testRunner: JUnit
+          testResultsFiles: '**/pytest-results.xml'
+          failTaskOnFailedTests: true  # Set to 'true' to fail the task if any tests fail

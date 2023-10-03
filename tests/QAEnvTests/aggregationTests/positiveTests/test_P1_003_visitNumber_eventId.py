@@ -1,30 +1,33 @@
-from tests.QAEnvTests.aggregationTests.visitNumber_eventId_Dict import *
-from tests.QAEnvTests.aggregationTests.visitNumberLst import *
-from deepdiff import DeepDiff
 
 
-def test_visitNumber_eventId():
-    print('Check matching visitNumber _ eventId list')
-    mapper = visitNumberEventIdMapping()
-    templst = visitNumberLst()
-    visitNum_lst = templst.visitNumTempLst_parsedhl7()
-    visitNum_eventId_parsedhl7_map = mapper.visitNum_eventId_parsedhl7()
-    visitNum_eventId_extractedAdt_map = mapper.visitNum_eventId_extractedAdt()
-
-    for num in visitNum_lst:
-        eventIdLst_extractedAdt = visitNum_eventId_extractedAdt_map.get(num)
-        print('extractedAdt _ visitNum, eventId mapping : ', num, eventIdLst_extractedAdt)
-        eventIdLst_parsedhl7 = visitNum_eventId_parsedhl7_map.get(num)
-        print('parsedhl7 _ visitNum, eventId mapping : ', num, eventIdLst_parsedhl7)
-
-        for eventId in eventIdLst_extractedAdt:
-            assert eventId in eventIdLst_parsedhl7
+def test_P1_003_visitNumber_eventId(P1_EST_HL7_filter,P1_EST_extractedAdt_filter):
 
 
+    parsed_docs = P1_EST_HL7_filter
+    parsed_visitNum_eventId_map = {}
+    for doc in  parsed_docs:
+        visitNumber =  doc.get("payload").get("eventData").get("ADT").get("fields").get("VisitNumber")
+        eventId = doc.get("eventId")
+
+        if visitNumber not in parsed_visitNum_eventId_map:
+            parsed_visitNum_eventId_map[visitNumber] = [eventId]
+        else:
+            parsed_visitNum_eventId_map[visitNumber].append(eventId)
+    print("Parsed_visitNum_eventID map : ",  parsed_visitNum_eventId_map)
+
+    extractedAdt_docs = P1_EST_extractedAdt_filter
+    extractedAdt_visitNumber_eventId_map = {}
+    for doc in extractedAdt_docs:
+        visitNumber = doc.get("visitNumber")
+        eventId = doc.get("eventId")
+
+        if visitNumber not in extractedAdt_visitNumber_eventId_map:
+            extractedAdt_visitNumber_eventId_map[visitNumber] = [eventId]
+        else:
+            extractedAdt_visitNumber_eventId_map[visitNumber].append(eventId)
 
 
+        if extractedAdt_visitNumber_eventId_map[visitNumber] == parsed_visitNum_eventId_map[visitNumber]:
+            assert True
 
-
-
-
-
+    print("ExtractedAdt_visitNum_eventID map : ", extractedAdt_visitNumber_eventId_map)

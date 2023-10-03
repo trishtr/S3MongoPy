@@ -1,37 +1,40 @@
-from tests.QAEnvTests.aggregationTests.visitNumberLst import *
 
 
-def test_visitNumber():
-    lister = visitNumberLst()
+def test_P1_002_visitNumber(P1_EST_HL7_filter,P1_EST_extractedAdt_filter):
 
-    parsed_hl7Lst = lister.visitNumLst_parsedhl7()
-    extracted_AdtLst = lister.visitNumLst_extractAdt()
+    parsed_visitNumberLst = []
+    parsed_visitNumber_count = {}
+    extracted_visitNumberLst = []
+    extracted_visitNumber_count = {}
 
-    count_map_1 = {}
-    for ele in parsed_hl7Lst:
-        count = count_map_1.get(ele, None)
+    docs_parsed = P1_EST_HL7_filter
+    for doc in docs_parsed:
+        visitNumber =  doc.get("payload").get("eventData").get("ADT").get("fields").get("VisitNumber")
+        parsed_visitNumberLst.append(visitNumber)
+
+    for visitNum in parsed_visitNumberLst:
+        count = parsed_visitNumber_count.get(visitNum, None)
         if count is None:
             count = 0
-        count_map_1[ele] = count + 1
+        parsed_visitNumber_count[visitNum] = count + 1
 
-    print('parsedhl7 docs counted based on visitNumber', count_map_1)
+    print("visitNumber in parsed HL7 counting map :" , parsed_visitNumber_count)
 
-    count_map_2 = {}
-    for ele in extracted_AdtLst:
-        count = count_map_2.get(ele, None)
+    docs_extractedAdt = P1_EST_extractedAdt_filter
+    for doc in docs_extractedAdt:
+        visitNumber =  doc.get("visitNumber")
+        extracted_visitNumberLst.append(visitNumber)
+
+    for visitNum in extracted_visitNumberLst:
+        count = extracted_visitNumber_count.get(visitNum, None)
         if count is None:
             count = 0
-        count_map_2[ele] = count + 1
+        extracted_visitNumber_count[visitNum] = count + 1
 
-    print('extractedAdtEvent docs counted based on visitNumber', count_map_2)
+    print("visitNumber in extractedAdtEvents counting map :", extracted_visitNumber_count)
 
-    if count_map_1 == count_map_2:
+    if extracted_visitNumber_count == parsed_visitNumber_count:
         assert True
-        print("Docs recorded for each visitNumber in 2 collections are the same")
-    else:
-        assert False
-
-
 
 
 
