@@ -1,0 +1,2884 @@
+[
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-001",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-18T10:41:45Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN001",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230118064143",
+            "MessageControlID": "51919115",
+            "AdmitDateTime": "20220817115520",
+            "RecordedDateTime": "20230118064143",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2W",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-18T00:51:14.489539Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-18T00:52:04.788288Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-002",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-19T11:49:54Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN001",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230119064950",
+            "MessageControlID": "51947158",
+            "AdmitDateTime": "20220817115520",
+            "RecordedDateTime": "20230119064950",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3S",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-19T00:51:56.589684Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-19T00:53:52.623667Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-003",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-20T12:11:09Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN001",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230120070903",
+            "MessageControlID": "51979169",
+            "AdmitDateTime": "20220817115520",
+            "RecordedDateTime": "20230120070903",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___IMCU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-20T00:52:19.106892Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-20T00:56:06.690675Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-004",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-21T14:54:58Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN001",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230120183421",
+            "MessageControlID": "51998400",
+            "AdmitDateTime": "20220817115520",
+            "RecordedDateTime": "20230120183421",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-21T00:52:25.387435Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-21T00:56:53.180794Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-005",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-01T13:25:45Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "SDS",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "OPS",
+            "VisitNumber": "ETARGVN002",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230201084914",
+            "MessageControlID": "51904668",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230201084914",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2IBU",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:51:05.489773Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:51:33.778749Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-006",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-01T16:51:51Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A06",
+            "Bed": "0",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN002",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230201125147",
+            "MessageControlID": "51907026",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230201125147",
+            "AssignedFacility": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CIBH",
+            "Room": "1",
+            "MessageType": "ADT_A06",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:51:05.309291Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:51:33.000004Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-007",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-01T16:51:55Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN002",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230201155149",
+            "MessageControlID": "51907027",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230201525149",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___SSU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:50:51.047455Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:51:12.192017Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-008",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-01T18:14:36Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN002",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230201141429",
+            "MessageControlID": "51907946",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230201141429",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ICU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:50:52.30647Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:51:13.795032Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-009",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-01T22:08:29Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN002",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230201180823",
+            "MessageControlID": "51909344",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230201180823",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2SFM",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:51:01.707069Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:51:27.30469Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-010",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-06T23:27:56Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN002",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230206182750",
+            "MessageControlID": "51936871",
+            "AdmitDateTime": "20230201084738",
+            "RecordedDateTime": "20230206182750",
+            "DischargeDateTime": "20230206140000",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___BC",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:51:29.366873Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:53:04.089007Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-011",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-02T14:36:31Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "SDS",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "OPS",
+            "VisitNumber": "ETARGVN003",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230302103630",
+            "MessageControlID": "51913972",
+            "AdmitDateTime": "20230302103608",
+            "RecordedDateTime": "20230302103630",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___OBS",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-25T00:51:09.549718Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-25T00:51:44.560561Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-012",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-02T19:38:48Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "OBV",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "OBS",
+            "VisitNumber": "ETARGVN003",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230302153843",
+            "MessageControlID": "51916699",
+            "AdmitDateTime": "20230302103608",
+            "RecordedDateTime": "20230302153843",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3S",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-25T00:51:09.935698Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-25T00:51:47.712028Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-013",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-04T20:07:22Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "OBV",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "OBS",
+            "VisitNumber": "ETARGVN003",
+            "DischargeDisposition": "03",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230304160717",
+            "MessageControlID": "51931701",
+            "AdmitDateTime": "20230302103608",
+            "RecordedDateTime": "20230304160717",
+            "DischargeDateTime": "20230304153000",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3S",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2022-11-25T00:51:24.028757Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2022-11-25T00:52:38.064016Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-014",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T16:32:55Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN004",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301123248",
+            "MessageControlID": "51906867",
+            "AdmitDateTime": "20230222085500",
+            "RecordedDateTime": "20230301123248",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ICU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-25T00:50:36.609096Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-25T00:50:58.205399Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-015",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T21:39:04Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN004",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301173900",
+            "MessageControlID": "51909246",
+            "AdmitDateTime": "20230222085500",
+            "RecordedDateTime": "20230301173900",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___IMCU",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-25T00:50:58.187901Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-25T00:51:20.124422Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-016",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T22:00:38Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN004",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301180033",
+            "MessageControlID": "51909316",
+            "AdmitDateTime": "20230222085500",
+            "RecordedDateTime": "20230301180033",
+            "DischargeDateTime": "20230301170000",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___IMCU",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-25T00:51:04.766578Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-25T00:51:30.199371Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-017",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-10T22:11:59Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230310181155",
+            "MessageControlID": "51909359",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230310181155",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ICU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-10T00:50:46.472125Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-10T00:51:05.326674Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-018",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-10T01:56:21Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230310215616",
+            "MessageControlID": "51909724",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230310215616",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___SSU",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-10T00:51:07.14709Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-10T00:51:39.556587Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-019",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-11T20:48:43Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230311164839",
+            "MessageControlID": "51931883",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230311164839",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___IMCU",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-11T00:51:23.808836Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-11T00:52:36.236659Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-020",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-12T11:46:47Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230312064642",
+            "MessageControlID": "51947142",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230312064642",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CIBH",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-12T00:51:55.28892Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-12T00:53:46.033239Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-021",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-13T11:38:05Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230313063801",
+            "MessageControlID": "51955266",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230313063801",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3E",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-13T00:52:02.912474Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-13T00:54:13.583882Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-022",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-16T14:17:13Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230314144943",
+            "MessageControlID": "51989207",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230314144943",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___IMCU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-16T00:52:24.291248Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-16T00:56:47.300108Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-023",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-16T14:22:26Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN005",
+            "DischargeDisposition": "03",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230314180022",
+            "MessageControlID": "51990575",
+            "AdmitDateTime": "20230308122007",
+            "RecordedDateTime": "20230314180022",
+            "DischargeDateTime": "20230316170000",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3S",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-16T00:52:22.570187Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-16T00:56:31.320835Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-024",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T19:14:26Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301151420",
+            "MessageControlID": "51908419",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230301151420",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2W",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-01T00:51:02.028039Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-01T00:51:27.615576Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-025",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T20:51:40Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301165135",
+            "MessageControlID": "51909115",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230301165135",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-01T00:50:43.749147Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-01T00:51:02.804761Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-026",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T21:05:37Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301170535",
+            "MessageControlID": "51909142",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230301170535",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2IBU",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-01T00:50:57.407843Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-01T00:51:17.438583Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-027",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-01T22:34:46Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230301183439",
+            "MessageControlID": "51909435",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230301183439",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___BC",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-01T00:50:57.768015Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-01T00:51:18.630518Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-028",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-04T16:57:26Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230304125720",
+            "MessageControlID": "51930351",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230304125720",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___OBS",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-04T00:51:24.04933Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-04T00:52:38.137225Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-029",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-04T21:00:47Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN006",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230304170042",
+            "MessageControlID": "51931944",
+            "AdmitDateTime": "20230228135048",
+            "RecordedDateTime": "20230304170042",
+            "DischargeDateTime": "20230304165500",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CED",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2022-11-25T00:51:23.709865Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2022-11-25T00:52:35.551348Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-030",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-02T08:52:46Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN007",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230202045242",
+            "MessageControlID": "51903679",
+            "AdmitDateTime": "20230201130628",
+            "RecordedDateTime": "20230202045242",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___AOPD",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-02T00:51:02.208725Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-02T00:51:28.709998Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-031",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-02T14:44:23Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN007",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230202104419",
+            "MessageControlID": "51905865",
+            "AdmitDateTime": "20230201130628",
+            "RecordedDateTime": "20230202104419",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ODO",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-02T00:50:46.208934Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-02T00:51:05.096169Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-032",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-02T14:44:44Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN007",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230202104439",
+            "MessageControlID": "51905871",
+            "AdmitDateTime": "20230201130628",
+            "RecordedDateTime": "20230202104439",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___REHS",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-02T00:50:43.309424Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-02T00:51:01.744527Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-033",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-02T22:17:25Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN007",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230202181720",
+            "MessageControlID": "51909385",
+            "AdmitDateTime": "20230201130628",
+            "RecordedDateTime": "20230202181720",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ACT",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-02T00:50:42.94801Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-02T00:51:01.427062Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-034",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-03T21:39:20Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "MED",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "MEDSG",
+            "VisitNumber": "ETARGVN007",
+            "DischargeDisposition": "07",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230203173915",
+            "MessageControlID": "51917302",
+            "AdmitDateTime": "20230201130628",
+            "RecordedDateTime": "20230203173915",
+            "DischargeDateTime": "20230203165200",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___PCAC",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-03T00:51:09.850498Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-03T00:51:47.424388Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-035",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-20T00:31:08Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN008",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230120203102",
+            "MessageControlID": "51901128",
+            "AdmitDateTime": "20230121170750",
+            "RecordedDateTime": "20230120203102",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-20T00:50:43.588793Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-20T00:51:02.414336Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-036",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-20T05:31:14Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN008",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230120013109",
+            "MessageControlID": "51903484",
+            "AdmitDateTime": "20230121170750",
+            "RecordedDateTime": "20230120013109",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-20T00:50:57.708524Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-20T00:51:18.497453Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-037",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-01-20T05:31:44Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN008",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230120013143",
+            "MessageControlID": "51903486",
+            "AdmitDateTime": "20230121170750",
+            "RecordedDateTime": "20230120013143",
+            "DischargeDateTime": "20230120224700",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-01-20T00:51:01.807163Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-01-20T00:51:27.388732Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-038",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-13T22:43:30Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A04",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN009",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230213184325",
+            "MessageControlID": "51909451",
+            "AdmitDateTime": "20230212184230",
+            "RecordedDateTime": "20230213184325",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A04",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-13T00:51:05.148404Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-13T00:51:31.97464Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-039",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-13T22:45:55Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN009",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230213184553",
+            "MessageControlID": "51909455",
+            "AdmitDateTime": "20230212184230",
+            "RecordedDateTime": "20230213184553",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3S",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-13T00:50:47.029986Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-13T00:51:06.693089Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-040",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-14T10:58:32Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN009",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230314034201",
+            "MessageControlID": "51911118",
+            "AdmitDateTime": "20230212184230",
+            "RecordedDateTime": "20230314034201",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2IBU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-14T00:51:13.533338Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-14T00:51:59.244498Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-041",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-14T10:58:33Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN009",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230214054229",
+            "MessageControlID": "51911120",
+            "AdmitDateTime": "20230212184230",
+            "RecordedDateTime": "20230214054229",
+            "DischargeDateTime": "20230214034229",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2SFM",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-14T00:51:13.708984Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-14T00:52:00.391601Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-042",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-22T16:02:24Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A04",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN010",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230322120214",
+            "MessageControlID": "51914806",
+            "AdmitDateTime": "20230320120057",
+            "RecordedDateTime": "20230322120214",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ED",
+            "MessageType": "ADT_A04",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-22T00:51:06.928227Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-22T00:51:38.397446Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-043",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-22T16:02:48Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN010",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230322120244",
+            "MessageControlID": "51914812",
+            "AdmitDateTime": "'20230320120057",
+            "RecordedDateTime": "20230322120244",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___OBS",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-22T00:51:13.249917Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-22T00:51:57.291212Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-044",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-22T22:07:26Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN010",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230322180723",
+            "MessageControlID": "51917382",
+            "AdmitDateTime": "20230320120057",
+            "RecordedDateTime": "20230322180723",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___SSU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-03-22T00:51:09.148541Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-03-22T00:51:42.319071Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-045",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-03-22T22:08:06Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ED",
+            "VisitNumber": "ETARGVN010",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "E",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230322200801",
+            "MessageControlID": "51917384",
+            "AdmitDateTime": "20230320120057",
+            "RecordedDateTime": "20230322200801",
+            "DischargeDateTime": "20230322174800",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2W",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "1"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2022-11-25T00:51:13.611487Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2022-11-25T00:51:59.680066Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-046",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-01T02:17:28Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A04",
+            "PatientType": "PAT",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "PAT",
+            "VisitNumber": "ETARGVN011",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230401211727",
+            "MessageControlID": "52021705",
+            "AdmitDateTime": "20230331211119",
+            "RecordedDateTime": "20230401211727",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "4",
+            "PointOfCare": "MT___2CED",
+            "MessageType": "ADT_A04",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-01T00:52:36.649138Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-01T00:58:15.63401Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-047",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-01T02:27:12Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "PAT",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "PAT",
+            "VisitNumber": "ETARGVN011",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230401212709",
+            "MessageControlID": "52021732",
+            "AdmitDateTime": "20230331211119",
+            "RecordedDateTime": "20230401212709",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "4",
+            "PointOfCare": "MT___OBS",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-01T00:52:41.608104Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-01T00:58:22.657486Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-048",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-01T04:24:29Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A02",
+            "PatientType": "OBV",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "OBS",
+            "VisitNumber": "ETARGVN011",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230401232426",
+            "MessageControlID": "52021798",
+            "AdmitDateTime": "20230331211119",
+            "RecordedDateTime": "20230401232426",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "4",
+            "PointOfCare": "MT___2W",
+            "MessageType": "ADT_A02",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2022-11-25T00:52:37.011023Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2022-11-25T00:58:20.893275Z",
+        "result": "OK"
+      }
+    ]
+  },
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-055",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-18T09:47:15Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN014",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230218044710",
+            "MessageControlID": "52015595",
+            "AdmitDateTime": "20230218113000",
+            "RecordedDateTime": "20230218044710",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___OBS",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:52:36.33369Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:58:11.374277Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-056",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-18T15:22:21Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A04",
+            "PatientType": "OPD",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN014",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230218102146",
+            "MessageControlID": "52018162",
+            "AdmitDateTime": "20230218102134",
+            "RecordedDateTime": "20230218102146",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___3E",
+            "MessageType": "ADT_A04",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:52:35.027293Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:58:01.414855Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-057",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-18T16:29:27Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "SERIES",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN014",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230218112923",
+            "MessageControlID": "52018600",
+            "AdmitDateTime": "20230218102134",
+            "RecordedDateTime": "20230218112923",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___SSU",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:52:35.008074Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:58:01.115504Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-058",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-02-19T05:02:01Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "SDS",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN014",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230219000139",
+            "MessageControlID": "52021811",
+            "AdmitDateTime": "20230218102134",
+            "RecordedDateTime": "20230219000139",
+            "DischargeDateTime": "20230218235959",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CED",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-02-25T00:52:37.047053Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-02-25T00:58:21.504089Z",
+        "result": "OK"
+      }
+    ]
+  },
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-059",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-11T09:47:15Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "ER",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN015",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230411044710",
+            "MessageControlID": "52015595",
+            "AdmitDateTime": "20230410113000",
+            "RecordedDateTime": "20230411044710",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CED",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-11T00:52:36.33369Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-11T00:58:11.374277Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-060",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-11T15:22:21Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A04",
+            "PatientType": "OPD",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN015",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230411102146",
+            "MessageControlID": "52018162",
+            "AdmitDateTime": "'20230410113000",
+            "RecordedDateTime": "20230218102146",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___ODO",
+            "MessageType": "ADT_A04",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-11T00:52:35.027293Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-11T00:58:01.414855Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-061",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-11T16:29:27Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A08",
+            "PatientType": "SERIES",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN015",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "I",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230411112923",
+            "MessageControlID": "52018600",
+            "AdmitDateTime": "'20230410113000",
+            "RecordedDateTime": "20230411112923",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___PCAC",
+            "MessageType": "ADT_A08",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-11T00:52:35.008074Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-11T00:58:01.115504Z",
+        "result": "OK"
+      }
+    ]
+  },
+
+  {
+    "eventType": "INTERNAL",
+    "eventSubType": "PARSEDHL7",
+    "eventId": "ETF-testqa-arg-062",
+    "clientId": "ETTestClient",
+    "eventSource": "RHAPSODY",
+    "locationId": "ETTestLocation",
+    "timestamp": "2023-04-12T05:02:01Z",
+    "payload": {
+      "eventData": {
+        "ADT": {
+          "type": "ADT",
+          "fields": {
+            "VersionID": "2.3",
+            "EventTypeCode": "A03",
+            "PatientType": "SDS",
+            "ProcessingID": "P",
+            "SendingApplication": "AFFINITY",
+            "HospitalService": "ACT",
+            "VisitNumber": "ETARGVN015",
+            "DischargeDisposition": "01",
+            "ReceivingFacility": "WMC",
+            "PatientClass": "O",
+            "SendingFacility": "WMC",
+            "ReceivingApplication": "SHIFTWIZARD",
+            "MessageDateTime": "20230412000139",
+            "MessageControlID": "52021811",
+            "AdmitDateTime": "20230410113000",
+            "RecordedDateTime": "20230412000139",
+            "DischargeDateTime": "20230411235959",
+            "AssignedLocation": "WMC",
+            "AdmitSource": "1",
+            "PointOfCare": "MT___2CED",
+            "MessageType": "ADT_A03",
+            "AdmissionType": "3"
+          }
+        }
+      }
+    },
+    "log": [
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-msk-parser",
+        "timestamp": "2023-04-12T00:52:37.047053Z",
+        "result": "OK"
+      },
+      {
+        "function": "scm-oi-lamb-useast1-qa-msk-to-mongo-writer",
+        "timestamp": "2023-04-12T00:58:21.504089Z",
+        "result": "OK"
+      }
+    ]
+  }
+
+
+
+
+]
