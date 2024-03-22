@@ -16,8 +16,8 @@ def write_to_excel(data, excel_file):
     df.to_excel(excel_file, index=False)
 
 if __name__ == "__main__":
-    folder_path = '/Users/tran.trang/Desktop/Jan31'
-    excel_file = '/Users/tran.trang/Desktop/Jan31.xlsx'
+    folder_path = '/Users/trtr/Desktop/Jan31'
+    excel_file = '/Users/trtr/Desktop/Jan31.xlsx'
 
     text_data = read_text_files_from_folder(folder_path)
     write_to_excel(text_data, excel_file)

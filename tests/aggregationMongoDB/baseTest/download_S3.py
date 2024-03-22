@@ -18,17 +18,19 @@ def download_all_objects_in_folder():
     # List all objects in the S3 bucket
 
     bucket_name = "scm-hl7"
-    partial_prefix = 'ABC/2024/1/26/'
+    partial_prefix = '/2024/3/15/'
     local_directory = os.path.expanduser('~/Desktop')
 
-    target_day = datetime(2024, 2, 20, tzinfo=timezone.utc).replace(tzinfo=None)
     # Paginate through objects in the bucket with the specified prefix
     paginator = s3_client.get_paginator('list_objects_v2')
     for page in paginator.paginate(Bucket=bucket_name, Prefix= partial_prefix):
         if 'Contents' in page:
             for obj in page['Contents']:
                 key = obj['Key']
-                last_modified = obj['LastModified'].replace(tzinfo=None)
+                # print(obj)
+                # json_data = obj['Body'].read().decode('utf-8')
+                response = s3_client.get_object(Bucket=bucket_name, Key=key)
+                json_data = response['Body'].read().decode('utf-8')
 
                 # Extract the directory path of the object
                 dir_name = os.path.dirname(key)
@@ -40,7 +42,7 @@ def download_all_objects_in_folder():
                 os.makedirs(os.path.join(local_directory, day_folder), exist_ok=True)
                 # Download the object and save it into the corresponding local directory
                 local_file_path = os.path.join(local_directory, day_folder, os.path.basename(key))
-                if last_modified < target_day:
+                if 'ARH019' in json_data:
 
                     s3_client.download_file(bucket_name, key, local_file_path)
 
