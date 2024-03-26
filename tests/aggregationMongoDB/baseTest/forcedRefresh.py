@@ -8,7 +8,7 @@ def forcedRefresh():
         connectionStr = ""
 
         client = pymongo.MongoClient(connectionStr, serverSelectionTimeoutMS=5000,tlsCAFile=ca)
-        databaseName = "scm-data-lake"
+        databaseName = "data-lake"
         dbname = client.get_database(databaseName)
         print("Create connecting session")
         
