@@ -16,7 +16,7 @@ def create_manifest_csv():
     # List all objects in the S3 bucket
 
     bucket_name = ""
-    partial_prefix = 'TestClient/2023/11/1'
+    partial_prefix =''
 
     object_keys = []
     paginator = s3_client.get_paginator('list_objects_v2')
