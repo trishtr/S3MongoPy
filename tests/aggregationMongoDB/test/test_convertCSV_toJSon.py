@@ -11,8 +11,8 @@ def test_csv_json_convert(s3_session):
  
     # Read inference-output-csv file: 
 
-    bucket_name = "scm-oi-uat-useast1-s3-ml-inference-output"
-    partial_prefix = 'APPRHS/APPRHS/2024/04/08/'
+    bucket_name = "-ml-inference-output"
+    partial_prefix = 'A/A/2024/04/08/'
                  
     csv_files= read_csv_from_s3(s3_session,bucket_name, partial_prefix)
      
