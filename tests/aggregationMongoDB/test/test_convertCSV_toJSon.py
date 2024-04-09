@@ -7,22 +7,24 @@ from io import StringIO
 import csv
 from pathlib import Path
 
-def test_csv_json_convert(s3_session):
+def test_publisherOutput_Convert(s3_session,getDatabaseName):
  
     # Read inference-output-csv file: 
 
-    bucket_name = "-ml-inference-output"
+    bucket_name = "s3-ml-inference-output"
     partial_prefix = 'A/A/2024/04/08/'
                  
     csv_files= read_csv_from_s3(s3_session,bucket_name, partial_prefix)
      
-    json_data_list = csv_short_term_to_json(csv_files)
+    json_data_list = csv_short_term_to_json(csv_files,getDatabaseName)
+    print(len(json_data_list))
             
     for i, json_data in enumerate(json_data_list):
         with open(f'file_{i+1}.json', 'w')as json_file:
             json_file.write(json_data)
 
-
+    # with open(f'file_output.json', 'w') as json_file:
+    #     json_file.write(json_data_list)
 
 
                 
@@ -75,7 +77,7 @@ def csv_short_term_to_json(csv_files,getDatabaseName):
             data["payload"][0]['census_data'].append({
                     
                   
-                        "unit_code": unit_code_unit_id_dict.get(unit_id),
+                        "unit_code": unit_code_unit_id_dict[unit_id],
                         "forecast_datetime": forecast_datetime,
                         "predicted_census": predicted_census
                     
@@ -85,10 +87,12 @@ def csv_short_term_to_json(csv_files,getDatabaseName):
             json_data = json.dumps(data)
 
 
-            json_data_list.append(json_data)
-        print(json_data_list)
+        json_data_list.append(json_data)
+        # print(json_data_list)
         return json_data_list
+        # return json_data
     
+
 def readUnitTaxonomy(getDatabaseName):
     dbName = getDatabaseName
     
