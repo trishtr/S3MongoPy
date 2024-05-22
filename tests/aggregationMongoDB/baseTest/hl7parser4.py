@@ -64,6 +64,14 @@ class HL7Parser():
             
         return parsed_message
     
+    def set_default_OBX2_type(self, parsed_message):
+        for segment in parsed_message.children:
+            # Check if the segment is an OBX segment
+            if segment.name == "OBX":
+                obx_2_field = segment.obx_2
+                if obx_2_field:
+                    obx_2_field.data_type = 'ST'
+    
     def extract_fields(self, parsed_message):
         field_dict = OrderedDict()
         for segment in parsed_message.children:
